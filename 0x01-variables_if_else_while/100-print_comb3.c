@@ -8,24 +8,30 @@
  */
 int main(void)
 {
-	int a, b;
+	int i, e;
+	
+	i = 48;
+	e = 48;
 
-	a = 0;
-	b = 1;
-	while (a <= 9)
+	while (e < 58)
 	{
-		while (b <= 9)
+		i = 48;
+		while (i < 58)
 		{
-			if ((a != b) || (a < b))
+			if (e != i && e < i)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
 				putchar(',');
 				putchar(' ');
 			}
-			b = b + 1;
+			i++;
 		}
-		a = a + 1;
+		e++;
 	}
 	putchar('\n');
 	return (0);
