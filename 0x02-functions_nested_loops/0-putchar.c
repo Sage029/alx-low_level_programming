@@ -8,7 +8,7 @@ int main(void)
 {
 	char str[] = "putchar";
 
-	putchar(str);
-	putchar('\n');
+	_putchar(str);
+	_putchar('\n');
 	return (0);
 }
