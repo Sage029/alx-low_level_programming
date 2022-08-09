@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
  * jack_bauer - prints the time of the day
@@ -6,31 +6,29 @@
  */
 void jack_bauer(void)
 {
-	int a, b, c, d;
+	int a, c, d;
 
 	a = 0;
-	while (a <= 2)
+	while (a <= 23)
 	{
-		b = 0;
-		while (b <= 3)
+		c = 0;
+		while (c <= 5)
 		{
-			c = 0;
-			while (c <= 5)
+			d = 0;
+			while (d <= 9)
 			{
-				d = 0;
-				while (d <= 9)
-				{
-					_putchar(a + '0');
-					_putchar(b + '0');
-					_putchar(':');
-					_putchar(c + '0');
-					_putchar(d + '0');
-					_putchar('\n');
-					d++;
-				}
-				c++;
+				if (a < 10 )
+					_putchar('0');
+				else
+					_putchar((a / 10) + '0');
+				_putchar((a % 10) + '0');
+				_putchar(':');
+				_putchar(c + '0');
+				_putchar(d + '0');
+				_putchar('\n');
+				d++;
 			}
-			b++;
+			c++;
 		}
 		a++;
 	}
