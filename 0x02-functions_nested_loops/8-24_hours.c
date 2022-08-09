@@ -17,7 +17,7 @@ void jack_bauer(void)
 			d = 0;
 			while (d <= 9)
 			{
-				if (a < 10 )
+				if (a < 10)
 					_putchar('0');
 				else
 					_putchar((a / 10) + '0');
