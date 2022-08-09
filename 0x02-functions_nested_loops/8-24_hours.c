@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * jack_bauer - prints the time of the day
