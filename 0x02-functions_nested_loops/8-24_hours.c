@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
-void jack_bauer(void);
-/**
- * main - check the code
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
 
 /**
  * jack_bauer - prints the time of the day

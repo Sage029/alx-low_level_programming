@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
-void times_table(void);
-/**
- * main - check the code
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	times_table();
-	return (0);
-}
 
 /**
  * times_table - prints the times table

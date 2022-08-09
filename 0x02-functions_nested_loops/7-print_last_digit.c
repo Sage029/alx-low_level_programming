@@ -1,24 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
-int print_last_digit(int);
-/**
- * main - check the code
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int r;
-
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
-	return (0);
-}
 
 /**
  * print_last_digit - prints the aphabets
@@ -28,5 +8,11 @@ int main(void)
  */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	int last_digit = n % 10;
+
+	if (last_digit < 0)
+		last_digit *= -1;
+
+	_putchar(last_digit + '0');
+	return (last_digit);
 }
